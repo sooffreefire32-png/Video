@@ -13,7 +13,8 @@
     "gen:project": "node tools/gen-project.js",
     "render": "node workflow/render.js",
     "render:teaser": "node workflow/render.js --to 60 --out output/teaser-60s.mp4 --width 960",
-    "render:sample": "node workflow/render.js --project workflow/sample.xml --out output/sample.mp4 --width 640 --fps 24"
+    "render:sample": "node workflow/render.js --project workflow/sample.xml --out output/sample.mp4 --width 640 --fps 24",
+    "convert": "bash workflow/convert.sh"
   },
   "dependencies": {
     "fast-xml-parser": "^4.5.1",

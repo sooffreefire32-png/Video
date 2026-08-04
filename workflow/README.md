@@ -2,6 +2,27 @@
 
 Turn a story into a finished MP4 with this repo. Everything is automated except your voice.
 
+## ✨ The fastest way: render in the cloud (no install needed)
+
+This repo ships a **GitHub Actions workflow** (`.github/workflows/render.yml`) that converts the XML project to MP4 **right on GitHub** — you don't need Node, ffmpeg or anything installed:
+
+1. Open this repo on GitHub → **Actions** tab.
+2. Pick the **🎬 Render XML → MP4** workflow on the left.
+3. Click **Run workflow**, choose width / fps / how many seconds (600 = full 10:00 video), and hit the green button.
+4. When the job finishes, open it and download the MP4 from the **Artifacts** section.
+
+A smoke test (10s sample render) also runs automatically on every push so you always know the pipeline works.
+
+## 🖥️ Or render locally in one command
+
+```bash
+./workflow/convert.sh                        # full 10:00 @ 1280×720 → output/atm-tomorrow-money.mp4
+./workflow/convert.sh --to 60 --width 960    # 60s teaser
+bun run convert                              # same as the first line (script alias)
+```
+
+`convert.sh` needs only [Bun](https://bun.sh) (or Node) — it installs ffmpeg-static + sharp automatically via `bun install`.
+
 ## The full pipeline (5 steps)
 
 ```
@@ -9,6 +30,26 @@ story/scenes.json ──► tools/gen-project.js ──► project/*.xml ──�
        ▲                                                            │
    (edit story)                                               (add your VO)
 ```
+
+> `workflow/convert.sh` and the GitHub Actions workflow both just run `workflow/render.js` — the same converter, three ways to call it.
+
+---
+
+## Local render reference
+
+Fast iteration: `bun workflow/render.js --to 60 --width 960 --out output/teaser.mp4`
+
+All flags:
+
+| Flag | Meaning | Default |
+|---|---|---|
+| `--project` | XML project file to render | `project/atm-tomorrow-money.xml` |
+| `--out` | Output MP4 path | `output/atm-tomorrow-money.mp4` |
+| `--from` / `--to` | Render a slice of the timeline (seconds) | `0` / end |
+| `--width` | Output width px (16:9) | `1280` |
+| `--fps` | Frames per second | `30` |
+| `--no-chips` | Skip title/caption overlays | off |
+| `--silent` | Skip audio entirely | off |
 
 ### Step 1 — Write / edit the story
 Edit `story/scenes.json` — each scene has start/end time, narrator line (`vo`), visual direction, mood and background art. Also keep `story/script.md` as the narration bible.

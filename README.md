@@ -28,9 +28,21 @@ A complete **Chroma Toons–style animated story video kit**: full 10-minute Hin
 
 ## 🚀 Quickstart
 
+### ☁️ No-install option — render on GitHub (recommended)
+
+The repo has a **GitHub Actions workflow** (`.github/workflows/render.yml`) that converts the XML project to MP4 **in the cloud**:
+
+1. Open this repo on GitHub → **Actions** → **🎬 Render XML → MP4**.
+2. **Run workflow** → pick width / fps / seconds (600 = full 10:00 video) → run.
+3. Download the finished MP4 from the job's **Artifacts**. Done — no software needed.
+
+A 10s smoke-test render also runs on every push, so you always know the pipeline works.
+
+### 💻 Local option — one command
+
 ```bash
-bun install                 # ffmpeg-static + sharp + fast-xml-parser
-bun workflow/render.js      # full 10:00 @ 1280×720 → output/atm-tomorrow-money.mp4
+bun install                    # ffmpeg-static + sharp + fast-xml-parser
+./workflow/convert.sh          # full 10:00 @ 1280×720 → output/atm-tomorrow-money.mp4
 ```
 
 Faster smoke tests:
@@ -55,8 +67,11 @@ project/
 public/assets/                    24 original flat-vector SVG scenes, characters & props
 workflow/
   render.js                       XML → MP4 converter (Ken Burns, grade, captions, fades)
+  convert.sh                      one-command local converter (wraps render.js)
   schema.md                       the XML project format, fully documented
   sample.xml                      10-second smoke-test project
+.github/workflows/
+  render.yml                      cloud render: full MP4 on demand, smoke test on push
 tools/
   gen-assets.js                   regenerates every SVG asset from scratch
   gen-project.js                  scenes.json → project XML

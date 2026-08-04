@@ -1,0 +1,96 @@
+name: 🎬 Render XML → MP4
+
+on:
+  # Manual trigger — render the full video (or any slice) in the cloud,
+  # then download the MP4 from the workflow's Artifacts.
+  workflow_dispatch:
+    inputs:
+      width:
+        description: "Output width in px (16:9, height is automatic)"
+        required: true
+        default: "1280"
+        type: choice
+        options:
+          - "1280"   # 1280×720 — best quality (slower)
+          - "960"    # 960×540 — good balance
+          - "720"    # 720×405 — fast
+      fps:
+        description: "Frames per second"
+        required: true
+        default: "30"
+        type: choice
+        options:
+          - "30"
+          - "24"
+      to:
+        description: "Render up to second N (600 = full 10:00 video)"
+        required: true
+        default: 600
+        type: number
+  # Automatic smoke test — proves the pipeline works on every push.
+  push:
+    branches: [main]
+    paths:
+      - "workflow/**"
+      - "project/**"
+      - "public/assets/**"
+      - "story/**"
+      - "tools/**"
+      - "package.json"
+      - "bun.lock"
+
+jobs:
+  smoke-test:
+    name: Smoke test (10s sample)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+
+      - name: Install dependencies
+        run: bun install --frozen-lockfile
+
+      - name: Render 10s sample
+        run: bun workflow/render.js --project workflow/sample.xml --out output/sample.mp4 --width 640 --fps 24
+
+      - name: Upload sample MP4
+        uses: actions/upload-artifact@v4
+        with:
+          name: sample-mp4
+          path: output/sample.mp4
+          if-no-files-found: error
+
+  render-video:
+    name: Render The ATM That Printed Tomorrow's Money
+    if: github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+
+      - name: Install dependencies
+        run: bun install --frozen-lockfile
+
+      - name: Render project XML → MP4
+        run: |
+          bun workflow/render.js \
+            --project project/atm-tomorrow-money.xml \
+            --out output/atm-tomorrow-money.mp4 \
+            --width ${{ inputs.width }} \
+            --fps ${{ inputs.fps }} \
+            --to ${{ inputs.to }}
+
+      - name: Upload MP4
+        uses: actions/upload-artifact@v4
+        with:
+          name: atm-tomorrow-money-mp4
+          path: output/atm-tomorrow-money.mp4
+          if-no-files-found: error
+          retention-days: 30
