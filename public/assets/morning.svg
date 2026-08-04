@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360">
+<defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0a0f1e"/><stop offset="1" stop-color="#16213e"/></linearGradient><radialGradient id="mornGlow"><stop offset="0" stop-color="rgba(251,191,36,0.55)"/><stop offset="1" stop-color="rgba(124,45,18,0.35)"/></radialGradient></defs>
+<rect x="0" y="0" width="640" height="360" rx="0" fill="url(#sky)" />
+<rect x="0" y="0" width="640" height="360" fill="url(#mornGlow)"/>
+<rect x="0" y="0" width="640" height="360" fill="#fde68a" opacity="0.18"/>
+<rect x="440" y="40" width="140" height="100" fill="#fde68a" opacity="0.9" rx="4"/>
+<rect x="448" y="140" width="124" height="8" fill="#d97706" opacity="0.5"/>
+<!-- kitchen -->
+<rect x="40" y="200" width="240" height="110" fill="#a16207" rx="8"/>
+<circle cx="160" cy="230" r="26" fill="#78350f"/>
+<rect x="130" y="222" width="60" height="14" fill="#fde68a" opacity="0.9" rx="4"/>
+<path d="M 150 210 q 4 -16 10 -20 q -2 14 -8 20" stroke="#e2e8f0" stroke-width="2.4" fill="none" opacity="0.8"/>
+<path d="M 168 212 q 6 -20 14 -24 q -4 16 -12 22" stroke="#e2e8f0" stroke-width="2.4" fill="none" opacity="0.7"/>
+<rect x="60" y="250" width="90" height="30" fill="#92400e" rx="4"/>
+<rect x="100" y="200" width="40" height="26" fill="#fbbf24" rx="4"/>
+<!-- amma happy -->
+<rect x="285.3" y="235.3" width="11.55" height="48.300000000000004" rx="4.2" fill="#7c2d12" /><rect x="303.15" y="235.3" width="11.55" height="48.300000000000004" rx="4.2" fill="#7c2d12" /><ellipse cx="290.55" cy="283.6" rx="12.600000000000001" ry="6.300000000000001" fill="#3b3b3b" /><ellipse cx="309.45" cy="283.6" rx="12.600000000000001" ry="6.300000000000001" fill="#3b3b3b" /><rect x="272.7" y="195.4" width="54.6" height="46.2" rx="12.600000000000001" fill="#ea580c" /><rect x="264.3" y="199.6" width="12.600000000000001" height="39.9" rx="6.300000000000001" fill="#ea580c" transform="rotate(8 270.6 199.6)"/><rect x="323.1" y="199.6" width="12.600000000000001" height="39.9" rx="6.300000000000001" fill="#ea580c" transform="rotate(-8 329.4 199.6)"/><circle cx="270.6" cy="239.5" r="6.300000000000001" fill="#e8b48c" /><circle cx="329.4" cy="239.5" r="6.300000000000001" fill="#e8b48c" /><rect x="293.7" y="187" width="12.600000000000001" height="10.5" rx="0" fill="#e8b48c" /><circle cx="300" cy="168.1" r="25.200000000000003" fill="#e8b48c" /><ellipse cx="300" cy="161.8" rx="26.25" ry="18.900000000000002" fill="#d6d3d1" /><rect x="273.75" y="163.89999999999998" width="52.5" height="12.600000000000001" rx="6.300000000000001" fill="#d6d3d1" /><circle cx="314.7" cy="153.39999999999998" r="7.3500000000000005" fill="#d6d3d1" /><line x1="290.55" y1="158.65" x2="296.85" y2="158.65" stroke="#1c1917" stroke-width="2.4" /><line x1="303.15" y1="158.65" x2="309.45" y2="158.65" stroke="#1c1917" stroke-width="2.4" /><circle cx="293.7" cy="166" r="2.7300000000000004" fill="#1c1917" /><circle cx="306.3" cy="166" r="2.7300000000000004" fill="#1c1917" /><ellipse cx="300" cy="178.6" rx="7.3500000000000005" ry="5.25" fill="#7f1d1d" />
+<rect x="286" y="180" width="28" height="20" fill="#fef3c7" opacity="0.9" rx="3"/>
+<text x="330" y="160" font-family="DejaVu Sans, sans-serif" font-size="16" fill="#7c2d12" text-anchor="middle">"Beta! Halwa bana liya!"</text>
+<!-- light rays -->
+<path d="M 560 0 L 540 360 L 580 360 Z" fill="#fde68a" opacity="0.14"/><path d="M 576 0 L 560 360 L 596 360 Z" fill="#fde68a" opacity="0.14"/><path d="M 592 0 L 580 360 L 612 360 Z" fill="#fde68a" opacity="0.14"/><path d="M 608 0 L 600 360 L 628 360 Z" fill="#fde68a" opacity="0.14"/><path d="M 624 0 L 620 360 L 644 360 Z" fill="#fde68a" opacity="0.14"/>
+<rect x="0" y="310" width="640" height="50" fill="#7c2d12" opacity="0.4"/>
+</svg>

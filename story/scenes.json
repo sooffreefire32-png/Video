@@ -1,0 +1,208 @@
+{
+  "title": "The ATM That Printed Tomorrow's Money",
+  "titleHi": "ATM Jo Kal Ka Paisa Deti Thi",
+  "channel": "KalKatha Toons",
+  "duration": 600,
+  "fps": 30,
+  "tagline": "Kal koi jagah nahi hai jo milti hai... kal ek jagah hai jo banti hai.",
+  "scenes": [
+    {
+      "id": "s01",
+      "beat": "Hook",
+      "start": 0,
+      "end": 20,
+      "title": "Midnight, Pahadi Road",
+      "vo": "Aaj ki raat, ek ladke ne ATM se paise nikale. Lekin jab usne note ko haath mein uthaya... toh note par koi aur hi date chhapi hui thi.",
+      "visual": "Rain. Dark street. One glowing ATM booth. A trembling hand.",
+      "mood": "shock",
+      "bg": "street-night.svg"
+    },
+    {
+      "id": "s02",
+      "beat": "Hook",
+      "start": 20,
+      "end": 45,
+      "title": "TRANSACTION FROM TOMORROW",
+      "vo": "Kal ki date. Aur woh paisa kaam kar raha tha. Bilkul asli ki tarah. Lekin jo baat aage hone wali thi, usne is shehar ka waqt hi badal ke rakh diya. Yeh hai... Kal Wale ATM ki kahani.",
+      "visual": "Notes sliding out. ATM screen glows red: TRANSACTION FROM TOMORROW.",
+      "mood": "shock",
+      "bg": "atm-closeup.svg"
+    },
+    {
+      "id": "s03",
+      "beat": "Raghu ki zindagi",
+      "start": 45,
+      "end": 90,
+      "title": "Raghu ka kamra",
+      "vo": "Is kahani ka hero, Raghu. B.Com ka aakhri saal. Din mein delivery karne wala, raat ko padhai. Ghar mein do kamre, ek dawai, aur sau sapne.",
+      "visual": "Small rented room. Flickering tube light. Raghu checks phone — only bills.",
+      "mood": "empathy",
+      "bg": "room-night.svg"
+    },
+    {
+      "id": "s04",
+      "beat": "Raghu ki zindagi",
+      "start": 90,
+      "end": 120,
+      "title": "Aath hazaar ka bill",
+      "vo": "Jab Amma ki tabiyat kharab hui, doctor ne ₹8,000 ki dawai likhi. Raghu ke paas sirf do sau the. Aur ussi raat woh nikal pada — us purane ATM par.",
+      "visual": "Amma in bed coughing. Medicine bill. Determined Raghu walks into the rain.",
+      "mood": "empathy",
+      "bg": "room-night.svg"
+    },
+    {
+      "id": "s05",
+      "beat": "The ATM",
+      "start": 120,
+      "end": 155,
+      "title": "MahaLakshmi Bank — Branch 13",
+      "vo": "Machine purani thi. Na wiring thi, na koi shop. Lekin screen par light thi. Raghu ne socha — ek baar try karke dekhta hoon. Kya hi hoga?",
+      "visual": "Rusty ATM booth. Screen glows INSERT CARD with no cable attached.",
+      "mood": "mystery",
+      "bg": "atm-booth.svg"
+    },
+    {
+      "id": "s06",
+      "beat": "The ATM",
+      "start": 155,
+      "end": 180,
+      "title": "5000 rupaye, kal ki date",
+      "vo": "Usne 5000 rupaye nikale. Aur note par likha tha: KAL KI DATE. Raghu ne socha — printing mistake hogi. Lekin woh galat tha. Yeh invitation tha.",
+      "visual": "Close-up crisp note: 01-01-2087. Raghu blinks, runs.",
+      "mood": "mystery",
+      "bg": "note-closeup.svg"
+    },
+    {
+      "id": "s07",
+      "beat": "Paisa jo kaam karta hai",
+      "start": 180,
+      "end": 225,
+      "title": "Paisa kaam kar raha hai",
+      "vo": "Sabse bada twist yeh tha — paisa kaam kar raha tha. Pharmacy ne accept kiya. Kirana wale ne accept kiya. Auto wale ne bhi.",
+      "visual": "Cashier accepts the note. Amma takes medicines. Raghu smiles.",
+      "mood": "wonder",
+      "bg": "pharmacy.svg"
+    },
+    {
+      "id": "s08",
+      "beat": "Paisa jo kaam karta hai",
+      "start": 225,
+      "end": 255,
+      "title": "Ek hafte mein ameer",
+      "vo": "Ek hafte mein Raghu ki zindagi badal gayi. Lekin Kalu Chacha ne note uthaya aur ruk gaye: Beta... yeh note kal ka hai?",
+      "visual": "Montage of wealth. Kalu Chacha examines the note, uneasy.",
+      "mood": "wonder",
+      "bg": "shop-dusk.svg"
+    },
+    {
+      "id": "s09",
+      "beat": "Midnight twist",
+      "start": 255,
+      "end": 300,
+      "title": "BREAKING: Notes illegal!",
+      "vo": "Aadhi raat ko — tees din ki date wale saare notes ek second mein illegal ho gaye. Jinki date aaj hai woh asli. Jinki date kal hai... woh ab jaalsaaz the.",
+      "visual": "TV breaking news ticker. Every phone pings. Sirens at the door.",
+      "mood": "panic",
+      "bg": "newsroom.svg"
+    },
+    {
+      "id": "s10",
+      "beat": "Midnight twist",
+      "start": 300,
+      "end": 345,
+      "title": "Inspector Sher Singh",
+      "vo": "Inspector: Raghu! Woh note jis pe kal ki date hai — woh note criminal hai! Raghu bhaaga. Jaeb mein woh paisa, jo raat ko asli tha aur ab faaltu.",
+      "visual": "Door kicked open. Notes flying in wind like dead leaves.",
+      "mood": "panic",
+      "bg": "chase-night.svg"
+    },
+    {
+      "id": "s11",
+      "beat": "Wapsi ATM par",
+      "start": 345,
+      "end": 390,
+      "title": "3:00 AM — wapas",
+      "vo": "Teen baje woh wapas wahan tha. Machine ne card nahi maanga. Screen par ek shehar dikha — hawa mein gaadiyan, sheeshe ke minaar, aur sabse bada number: 2087.",
+      "visual": "Rain. Screen shows flying cars and glass towers. 2087.",
+      "mood": "revelation",
+      "bg": "city2087.svg"
+    },
+    {
+      "id": "s12",
+      "beat": "Wapsi ATM par",
+      "start": 390,
+      "end": 435,
+      "title": "Main koi bank nahi hoon",
+      "vo": "ATM: Main koi bank nahi hoon, Raghu. Main ek darpan hoon. Aur yeh paisa jo tune nikala... woh paisa nahi hai. Woh waqt hai.",
+      "visual": "The ATM speaks. Screen ripples like water.",
+      "mood": "revelation",
+      "bg": "atm-booth.svg"
+    },
+    {
+      "id": "s13",
+      "beat": "Kavya",
+      "start": 435,
+      "end": 480,
+      "title": "TIME POLICE",
+      "vo": "Screen ki roshni mein ek insaan aaya. Silver coat. Cyan aankhein. Aur haath mein chhota sa card: TIME POLICE. Mera naam Kavya hai. 2087.",
+      "visual": "Kavya steps out of the light. Timeline cracks behind her.",
+      "mood": "twist",
+      "bg": "portal.svg"
+    },
+    {
+      "id": "s14",
+      "beat": "Kavya",
+      "start": 480,
+      "end": 525,
+      "title": "Raghav — 2087 ka sabse ameer aadmi",
+      "vo": "Yeh ATM banaya tha Raghav ne — 2087 ka sabse ameer aadmi. Aur woh aadmi... tu hai, Raghu. Har note jo tu aaj kharach karega, woh kisi aur ka kal chura lega.",
+      "visual": "Raghu's reflection in the screen becomes older, in a silver coat.",
+      "mood": "twist",
+      "bg": "reflection.svg"
+    },
+    {
+      "id": "s15",
+      "beat": "The choice",
+      "start": 525,
+      "end": 555,
+      "title": "Paisa... ya Amma",
+      "vo": "Duniya bhar ka paisa, aur ek maa ki dawai. Raghu ke haath kaap rahe the. Phone par Amma ki awaaz: Beta... dawai khatam ho gayi.",
+      "visual": "Raghu holds the bag of notes. Phone glows. Tear.",
+      "mood": "climax",
+      "bg": "choice-night.svg"
+    },
+    {
+      "id": "s16",
+      "beat": "The choice",
+      "start": 555,
+      "end": 570,
+      "title": "Kal mera nahi hai",
+      "vo": "Aur tab Raghu ne woh kiya jo future ke sabse ameer aadmi ne kabhi nahi socha. Usne notes faad diye. Ek-ek karke. Kal ka paisa, aaj ki baarish mein.",
+      "visual": "Notes torn apart, flying into rain. Slow motion.",
+      "mood": "climax",
+      "bg": "tearing-notes.svg"
+    },
+    {
+      "id": "s17",
+      "beat": "Kal ka insaaf",
+      "start": 570,
+      "end": 585,
+      "title": "Tumne aaj chuna",
+      "vo": "Kavya: Tumne aaj chuna, Raghu. Isliye tumhara kal aayega. ATM golden dust mein bikhar gaya. Subah — Amma ki khansi gayab thi.",
+      "visual": "ATM crumbles into golden dust. Morning light. Amma cooking halwa.",
+      "mood": "warm",
+      "bg": "morning.svg"
+    },
+    {
+      "id": "s18",
+      "beat": "Kal ka insaaf",
+      "start": 585,
+      "end": 600,
+      "title": "Ek note — aaj ki date",
+      "vo": "Uske jaeb mein ek note tha. Date: AAJ KI. Likha tha: Amma theek hai — Tumhara Kal wala Khud. Aur kal... kal ek jagah hai jo banti hai.",
+      "visual": "Close-up of the note with silver signature. Logo end card.",
+      "mood": "warm",
+      "bg": "note-signed.svg"
+    }
+  ]
+}

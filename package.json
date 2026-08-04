@@ -1,0 +1,34 @@
+{
+  "name": "kal-katha-toons-atm-tomorrow",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "KalKatha Toons — 'The ATM That Printed Tomorrow's Money' · 10-min Chroma Toons-style story + XML→MP4 production workflow",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "typecheck": "tsc -b --noEmit",
+    "gen:assets": "node tools/gen-assets.js",
+    "gen:project": "node tools/gen-project.js",
+    "render": "node workflow/render.js",
+    "render:teaser": "node workflow/render.js --to 60 --out output/teaser-60s.mp4 --width 960",
+    "render:sample": "node workflow/render.js --project workflow/sample.xml --out output/sample.mp4 --width 640 --fps 24"
+  },
+  "dependencies": {
+    "fast-xml-parser": "^4.5.1",
+    "ffmpeg-static": "^5.3.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "sharp": "^0.34.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.1.8",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "@vitejs/plugin-react": "^4.5.0",
+    "tailwindcss": "^4.1.8",
+    "typescript": "~5.8.3",
+    "vite": "^7.0.0"
+  }
+}

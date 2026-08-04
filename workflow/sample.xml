@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Tiny sample project — renders in seconds. Try:
+     bun workflow/render.js --project workflow/sample.xml --out output/sample.mp4 --width 640 -->
+<project
+  title="Sample — Kal Wale ATM"
+  subtitle="Renderer Test"
+  channel="KalKatha Toons"
+  width="640" height="360" fps="24" duration="10"
+  audioDir="voiceover"
+>
+  <info>
+    Minimal smoke test for the XML→MP4 pipeline.
+  </info>
+  <assets>
+    <asset id="street-night" src="public/assets/street-night.svg" />
+    <asset id="city2087" src="public/assets/city2087.svg" />
+  </assets>
+  <audio>
+    <track src="voiceover/vo-full.mp3" label="Narration" offset="0" loop="false" />
+  </audio>
+  <captions font="workflow/fonts/DejaVuSans-Bold.ttf" size="40" color="#fde68a"
+    boxColor="rgba(0,0,0,0.55)" position="0.82" lineSpacing="1.15" maxLines="2" />
+  <scenes>
+    <scene id="t01" start="0" end="5" bg="street-night" motion="zoom-in" grade="#f59e0b" vignette="0.5" transition="fade" title="Test scene 1">
+      <caption>Yeh ek test hai — kal wale ATM ki.</caption>
+    </scene>
+    <scene id="t02" start="5" end="10" bg="city2087" motion="pan-left" grade="#22d3ee" vignette="0.5" transition="fade" title="Test scene 2">
+      <caption>2087. Aur yeh paisa... waqt hai.</caption>
+    </scene>
+  </scenes>
+</project>

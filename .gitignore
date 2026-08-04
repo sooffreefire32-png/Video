@@ -1,0 +1,20 @@
+# dependencies
+node_modules/
+
+# build / cache
+dist/
+.cache/
+
+# rendered videos (regenerate with workflow/render.js)
+output/*.mp4
+output/*.webm
+output/*.mkv
+
+# voiceover audio (drop your own recording here)
+voiceover/*.mp3
+voiceover/*.wav
+
+# os / editor
+.DS_Store
+Thumbs.db
+*.log

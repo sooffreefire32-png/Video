@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360">
+<defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0a0f1e"/><stop offset="1" stop-color="#16213e"/></linearGradient><radialGradient id="tearGlow"><stop offset="0" stop-color="rgba(251,191,36,0.4)"/><stop offset="1" stop-color="rgba(251,191,36,0)"/></radialGradient><radialGradient id="handSkin"><stop offset="0" stop-color="#e8b48c"/><stop offset="1" stop-color="#c98a5a"/></radialGradient></defs>
+<rect x="0" y="0" width="640" height="360" rx="0" fill="url(#sky)" />
+<ellipse cx="320" cy="200" rx="280" ry="150" fill="url(#tearGlow)" opacity="0.35"/>
+<!-- hands -->
+<ellipse cx="220" cy="180" rx="70" ry="42" fill="url(#handSkin)" transform="rotate(-24 220 180)"/>
+<ellipse cx="420" cy="180" rx="70" ry="42" fill="url(#handSkin)" transform="rotate(24 420 180)"/>
+<!-- torn note -->
+<rect x="230" y="140" width="180" height="110" fill="#0f6b34" rx="10"/>
+<rect x="242" y="152" width="156" height="86" fill="#16a34a" rx="7"/>
+<path d="M 242 152 L 398 238 L 398 152 Z" fill="#0f6b34"/>
+<path d="M 242 152 L 242 238 L 398 238 Z" fill="#0c5829"/>
+<line x1="242" y1="152" x2="398" y2="238" stroke="#fde68a" stroke-width="4" stroke-dasharray="8 6"/>
+<rect x="270" y="170" width="90" height="14" fill="#f0fdf4" opacity="0.9" rx="2" transform="rotate(-28 315 177)"/>
+<rect x="280" y="196" width="70" height="10" fill="#f0fdf4" opacity="0.8" rx="2" transform="rotate(-28 315 201)"/>
+<!-- flying scraps -->
+<rect x="40" y="60" width="26" height="16" fill="#16a34a" rx="3" transform="rotate(-64 53 68)"/><rect x="110" y="97" width="26" height="16" fill="#16a34a" rx="3" transform="rotate(-48 123 105)"/><rect x="180" y="134" width="26" height="16" fill="#16a34a" rx="3" transform="rotate(-32 193 142)"/><rect x="250" y="91" width="26" height="16" fill="#16a34a" rx="3" transform="rotate(-16 263 99)"/><rect x="320" y="128" width="26" height="16" fill="#16a34a" rx="3" transform="rotate(0 333 136)"/><rect x="390" y="85" width="26" height="16" fill="#16a34a" rx="3" transform="rotate(16 403 93)"/><rect x="460" y="122" width="26" height="16" fill="#16a34a" rx="3" transform="rotate(32 473 130)"/><rect x="530" y="79" width="26" height="16" fill="#16a34a" rx="3" transform="rotate(48 543 87)"/>
+<text x="320" y="80" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="bold" fill="#fde68a" text-anchor="middle">KAL KA PAISA, AAJ KI BAARISH MEIN</text>
+<line x1="0" y1="0" x2="-4" y2="14" stroke="#7dd3fc" stroke-width="1.2" opacity="0.35"/><line x1="37" y1="53" x2="33" y2="67" stroke="#7dd3fc" stroke-width="1.2" opacity="0.35"/><line x1="74" y1="106" x2="70" y2="120" stroke="#7dd3fc" stroke-width="1.2" opacity="0.35"/><line x1="111" y1="159" x2="107" y2="173" stroke="#7dd3fc" stroke-width="1.2" opacity="0.35"/><line x1="148" y1="212" x2="144" y2="226" stroke="#7dd3fc" stroke-width="1.2" opacity="0.35"/><line x1="185" y1="265" x2="181" y2="279" stroke="#7dd3fc" stroke-width="1.2" opacity="0.35"/><line x1="222" y1="318" x2="218" y2="332" stroke="#7dd3fc" stroke-width="1.2" opacity="0.35"/><line x1="259" y1="11" x2="255" y2="25" stroke="#7dd3fc" stroke-width="1.2" opacity="0.35"/><line x1="296" y1="64" x2="292" y2="78" stroke="#7dd3fc" stroke-width="1.2" opacity="0.35"/><line x1="333" y1="117" x2="329" y2="131" stroke="#7dd3fc" stroke-width="1.2" opacity="0.35"/><line x1="370" y1="170" x2="366" y2="184" stroke="#7dd3fc" stroke-width="1.2" opacity="0.35"/><line x1="407" y1="223" x2="403" y2="237" stroke="#7dd3fc" stroke-width="1.2" opacity="0.35"/><line x1="444" y1="276" x2="440" y2="290" stroke="#7dd3fc" stroke-width="1.2" opacity="0.35"/><line x1="481" y1="329" x2="477" y2="343" stroke="#7dd3fc" stroke-width="1.2" opacity="0.35"/><line x1="518" y1="22" x2="514" y2="36" stroke="#7dd3fc" stroke-width="1.2" opacity="0.35"/><line x1="555" y1="75" x2="551" y2="89" stroke="#7dd3fc" stroke-width="1.2" opacity="0.35"/><line x1="592" y1="128" x2="588" y2="142" stroke="#7dd3fc" stroke-width="1.2" opacity="0.35"/><line x1="629" y1="181" x2="625" y2="195" stroke="#7dd3fc" stroke-width="1.2" opacity="0.35"/>
+</svg>

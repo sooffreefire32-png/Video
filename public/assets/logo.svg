@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="480" viewBox="0 0 480 480">
+<defs><linearGradient id="lg1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#16213e"/><stop offset="1" stop-color="#0a0f1e"/></linearGradient></defs>
+<rect x="0" y="0" width="480" height="480" fill="#0a0f1e"/>
+<circle cx="240" cy="240" r="200" fill="url(#lg1)"/>
+<circle cx="240" cy="240" r="180" fill="none" stroke="#fbbf24" stroke-width="6"/>
+<circle cx="240" cy="240" r="160" fill="none" stroke="#fbbf24" stroke-width="2" opacity="0.5"/>
+<rect x="150" y="170" width="180" height="160" fill="#7f1d1d" rx="10"/>
+<rect x="160" y="140" width="160" height="34" fill="#1e3a8a" rx="5"/>
+<rect x="164" y="182" width="152" height="90" fill="#1e1b4b" rx="6"/>
+<rect x="172" y="190" width="136" height="74" fill="#fef3c7" rx="4"/>
+<text x="240" y="226" font-family="DejaVu Sans, sans-serif" font-size="21" font-weight="bold" fill="#b91c1c" text-anchor="middle">12:00 AM</text>
+<rect x="172" y="278" width="136" height="8" fill="#fbbf24"/>
+<rect x="172" y="292" width="136" height="16" fill="#0f172a" rx="3"/>
+<rect x="200" y="340" width="80" height="22" fill="#0f6b34" rx="4"/>
+<rect x="204" y="342" width="72" height="8" fill="#f0fdf4" rx="2"/>
+<text x="240" y="410" font-family="DejaVu Sans, sans-serif" font-size="30" font-weight="bold" fill="#fde68a" text-anchor="middle">KAL KATHA</text>
+<text x="240" y="436" font-family="DejaVu Sans, sans-serif" font-size="15" fill="#cbd5e1" text-anchor="middle">TOONS · HAR KAHANI MEIN EK KAL CHHUPA HAI</text>
+</svg>

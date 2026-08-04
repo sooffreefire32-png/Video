@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360">
+<defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0a0f1e"/><stop offset="1" stop-color="#16213e"/></linearGradient><radialGradient id="redGlow"><stop offset="0" stop-color="rgba(239,68,68,0.5)"/><stop offset="1" stop-color="rgba(239,68,68,0)"/></radialGradient><radialGradient id="redGlow2"><stop offset="0" stop-color="rgba(239,68,68,0.4)"/><stop offset="1" stop-color="rgba(239,68,68,0)"/></radialGradient></defs>
+<rect x="0" y="0" width="640" height="360" rx="0" fill="url(#sky)" />
+<rect x="0" y="0" width="640" height="360" fill="url(#redGlow)" opacity="0.35"/>
+<rect x="70" y="52" width="500" height="252" fill="#1e1b4b" rx="14"/>
+<rect x="86" y="68" width="468" height="150" fill="#fef3c7" rx="8"/>
+<rect x="96" y="80" width="90" height="12" fill="#1e293b" opacity="0.8"/>
+<rect x="96" y="100" width="150" height="12" fill="#1e293b" opacity="0.5"/>
+<rect x="96" y="120" width="120" height="12" fill="#1e293b" opacity="0.5"/>
+<rect x="96" y="140" width="200" height="12" fill="#1e293b" opacity="0.35"/>
+<rect x="96" y="166" width="300" height="22" fill="#b91c1c" rx="4"/>
+<text x="246" y="182" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="bold" fill="#fee2e2" text-anchor="middle">TRANSACTION FROM TOMORROW</text>
+<rect x="120" y="236" width="400" height="26" fill="#0f172a" rx="4"/>
+<rect x="150" y="242" width="34" height="6" fill="#22d3ee" opacity="0.9"/>
+<rect x="194" y="242" width="90" height="6" fill="#22d3ee" opacity="0.6"/>
+<rect x="294" y="242" width="60" height="6" fill="#22d3ee" opacity="0.4"/>
+<rect x="150" y="280" width="86" height="12" fill="#334155" rx="2"/>
+<rect x="250" y="278" width="120" height="16" fill="#0f766e" rx="3"/>
+<rect x="250" y="278" width="40" height="16" fill="#fbbf24" rx="3"/>
+<rect x="296" y="278" width="34" height="16" fill="#16a34a" rx="3"/>
+<rect x="332" y="278" width="38" height="16" fill="#94a3b8" rx="3"/>
+<ellipse cx="320" cy="150" rx="230" ry="120" fill="url(#redGlow2)" opacity="0.25"/>
+</svg>

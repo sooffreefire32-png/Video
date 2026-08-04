@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360">
+<defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2a1a3e"/><stop offset="1" stop-color="#5a2a4a"/></linearGradient></defs>
+<rect x="0" y="0" width="640" height="360" rx="0" fill="url(#sky)" />
+<circle cx="540" cy="80" r="34" fill="#fde68a" opacity="0.9"/>
+<rect x="0" y="240" width="640" height="120" fill="#1c1230"/>
+<rect x="60" y="110" width="520" height="140" fill="#2a1a3e" rx="8"/>
+<rect x="80" y="90" width="480" height="24" fill="#7c2d12" rx="4"/>
+<rect x="560" y="70" width="40" height="30" fill="#f59e0b" opacity="0.8" rx="3"/>
+<rect x="100" y="126" width="70" height="50" fill="#334155" rx="4"/>
+<rect x="106" y="132" width="28" height="14" fill="#fbbf24" rx="2"/><rect x="138" y="132" width="26" height="14" fill="#22d3ee" rx="2"/>
+<rect x="106" y="152" width="26" height="14" fill="#ef4444" rx="2"/><rect x="136" y="152" width="28" height="14" fill="#a78bfa" rx="2"/>
+<rect x="180" y="126" width="70" height="50" fill="#334155" rx="4"/>
+<rect x="186" y="132" width="58" height="14" fill="#fde68a" rx="2"/>
+<rect x="186" y="152" width="58" height="14" fill="#86efac" rx="2"/>
+<rect x="260" y="126" width="70" height="50" fill="#334155" rx="4"/>
+<rect x="266" y="132" width="30" height="14" fill="#f472b6" rx="2"/><rect x="300" y="132" width="24" height="14" fill="#fb923c" rx="2"/>
+<!-- string lights -->
+<path d="M 60 96 q 65 18 130 0 q 65 -18 130 0 q 65 18 130 0 q 65 -18 130 0" stroke="#7c2d12" stroke-width="2" fill="none"/>
+<circle cx="90" cy="100" r="4" fill="#fde68a"/><circle cx="140" cy="105" r="4" fill="#fbbf24"/><circle cx="190" cy="100" r="4" fill="#fde68a"/><circle cx="240" cy="96" r="4" fill="#fbbf24"/><circle cx="290" cy="100" r="4" fill="#fde68a"/><circle cx="340" cy="105" r="4" fill="#fbbf24"/><circle cx="390" cy="100" r="4" fill="#fde68a"/><circle cx="440" cy="96" r="4" fill="#fbbf24"/><circle cx="490" cy="100" r="4" fill="#fde68a"/><circle cx="540" cy="104" r="4" fill="#fbbf24"/>
+<!-- kalu chacha -->
+<rect x="245.3" y="237.3" width="11.55" height="48.300000000000004" rx="4.2" fill="#44403c" /><rect x="263.15" y="237.3" width="11.55" height="48.300000000000004" rx="4.2" fill="#44403c" /><ellipse cx="250.55" cy="285.6" rx="12.600000000000001" ry="6.300000000000001" fill="#3b3b3b" /><ellipse cx="269.45" cy="285.6" rx="12.600000000000001" ry="6.300000000000001" fill="#3b3b3b" /><rect x="232.7" y="197.4" width="54.6" height="46.2" rx="12.600000000000001" fill="#f5f5f4" /><rect x="224.3" y="201.6" width="12.600000000000001" height="39.9" rx="6.300000000000001" fill="#f5f5f4" transform="rotate(8 230.6 201.6)"/><rect x="283.1" y="201.6" width="12.600000000000001" height="39.9" rx="6.300000000000001" fill="#f5f5f4" transform="rotate(-8 289.4 201.6)"/><circle cx="230.6" cy="241.5" r="6.300000000000001" fill="#c98a5a" /><circle cx="289.4" cy="241.5" r="6.300000000000001" fill="#c98a5a" /><rect x="253.7" y="189" width="12.600000000000001" height="10.5" rx="0" fill="#c98a5a" /><circle cx="260" cy="170.1" r="25.200000000000003" fill="#c98a5a" /><ellipse cx="260" cy="163.8" rx="26.25" ry="18.900000000000002" fill="#e7e5e4" /><rect x="233.75" y="165.89999999999998" width="52.5" height="12.600000000000001" rx="6.300000000000001" fill="#e7e5e4" /><line x1="250.55" y1="160.65" x2="256.85" y2="160.65" stroke="#1c1917" stroke-width="2.4" /><line x1="263.15" y1="160.65" x2="269.45" y2="160.65" stroke="#1c1917" stroke-width="2.4" /><circle cx="253.7" cy="168" r="2.7300000000000004" fill="#1c1917" /><circle cx="266.3" cy="168" r="2.7300000000000004" fill="#1c1917" /><path d="M 254.75 182.7 q 5.25 4.2 10.5 0" stroke="#7f1d1d" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+<circle cx="236" cy="176" r="7" fill="#fef3c7" opacity="0.9"/><circle cx="244" cy="176" r="7" fill="#fef3c7" opacity="0.9"/>
+<rect x="232" y="182" width="16" height="3" fill="#78716c" rx="1.5"/>
+<rect x="238" y="186" width="8" height="12" fill="#78716c" rx="2"/>
+<!-- note in hand -->
+<rect x="300" y="214" width="44" height="26" fill="#0f6b34" rx="4" transform="rotate(14 322 227)"/>
+<rect x="302" y="216" width="40" height="8" fill="#f0fdf4" rx="2" transform="rotate(14 322 227)"/>
+<text x="322" y="244" font-family="DejaVu Sans, sans-serif" font-size="12" fill="#fde68a" text-anchor="middle">"Beta... yeh note kal ka hai?"</text>
+<rect x="0" y="300" width="640" height="60" fill="#140d26"/>
+</svg>
