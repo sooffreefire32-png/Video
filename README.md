@@ -55,6 +55,31 @@ bun workflow/render.js --from 120 --to 240 --out output/seg.mp4 --width 1280    
 
 ---
 
+## 📈 Bonus project — "The True Cost of a Car Loan vs Cash" (finance video)
+
+Built end-to-end with the **12-State YouTube Content Engine** workflow from the tutorial *"How to Create Viral Finance Videos using Claude"* (Dheeraj Mehra): channel analysis → Style DNA → script → per-beat image prompts → video prompts → thumbnails → SEO metadata → **Word export**. All content is original; the reference channel (Bob Invests) was used for *style only*.
+
+| Piece | File |
+|---|---|
+| Master prompt (12 states) | `content-engine/master-prompt.md` |
+| Style DNA (Bob Invests) | `content-engine/style-dna.md` |
+| Full script, 22 beats, 462 words | `content-engine/script.md` |
+| Visual profile + per-beat image prompts | `content-engine/state6-visual-profile.md`, `content-engine/state7-image-prompts.md` |
+| Video prompts | `content-engine/state8-video-prompts.md` |
+| Thumbnails (5) + SEO metadata | `content-engine/state9-11-thumbnails-metadata.md` |
+| **Word export (.docx)** | `content-engine/KalKatha-Toons-Finance-Content-Pack.docx` |
+| 22 original 16:9 SVG scenes | `public/assets/finance/` (regenerate: `bun gen:finance`) |
+| Project XML (3:05, 22 beats) | `project/finance-car-loan.xml` |
+
+Render it:
+```bash
+bun workflow/render.js --project project/finance-car-loan.xml --out output/finance-car-loan.mp4 --width 1280
+bun workflow/render.js --project project/finance-car-loan.xml --out output/finance-60s.mp4 --width 640 --fps 24   # 60s proof
+```
+Drop an AI voiceover (ElevenLabs / Google AI Studio, US male voice) at `voiceover/vo-full.mp3` to auto-mux it — or run the cloud workflow on GitHub for the full-res render.
+
+---
+
 ## 🗂️ Repository Map
 
 ```
@@ -75,6 +100,10 @@ workflow/
 tools/
   gen-assets.js                   regenerates every SVG asset from scratch
   gen-project.js                  scenes.json → project XML
+  gen-finance-assets.js           draws the 22 finance-video scenes (16:9)
+  export-docx.js                  State 12: exports the content pack to .docx
+content-engine/                   12-state content pack for the finance video
+  master-prompt.md · style-dna.md · script.md · state6-11 … · .docx export
 voiceover/                        drop vo-full.mp3 here (auto-muxed, optional)
 output/                           rendered MP4s land here
 ```

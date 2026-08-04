@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  "The True Cost of a Car Loan vs Cash: Running the Seven-Year Math"
+  Built by the 12-State Content Engine workflow (see content-engine/).
+  Reference channel style: Bob Invests (images + VO, slow zoom, dust, subtitles).
+  Render:  bun workflow/render.js -project project/finance-car-loan.xml -out output/finance-car-loan.mp4
+-->
+<project
+  title="The True Cost of a Car Loan vs Cash"
+  subtitle="Running the Seven-Year Math"
+  channel="KalKatha Toons Finance"
+  width="1920" height="1080" fps="30" duration="185"
+  audioDir="voiceover"
+>
+  <info>
+    Images + AI voiceover finance explainer, 22 beats. Voice: US male, calm American accent (ElevenLabs / Google AI Studio).
+    Add narration as voiceover/vo-full.mp3 to auto-mux; otherwise an ambient pad is added.
+  </info>
+
+  <assets>
+    <asset id="beat01" src="public/assets/finance/beat01.svg" />
+    <asset id="beat02" src="public/assets/finance/beat02.svg" />
+    <asset id="beat03" src="public/assets/finance/beat03.svg" />
+    <asset id="beat04" src="public/assets/finance/beat04.svg" />
+    <asset id="beat05" src="public/assets/finance/beat05.svg" />
+    <asset id="beat06" src="public/assets/finance/beat06.svg" />
+    <asset id="beat07" src="public/assets/finance/beat07.svg" />
+    <asset id="beat08" src="public/assets/finance/beat08.svg" />
+    <asset id="beat09" src="public/assets/finance/beat09.svg" />
+    <asset id="beat10" src="public/assets/finance/beat10.svg" />
+    <asset id="beat11" src="public/assets/finance/beat11.svg" />
+    <asset id="beat12" src="public/assets/finance/beat12.svg" />
+    <asset id="beat13" src="public/assets/finance/beat13.svg" />
+    <asset id="beat14" src="public/assets/finance/beat14.svg" />
+    <asset id="beat15" src="public/assets/finance/beat15.svg" />
+    <asset id="beat16" src="public/assets/finance/beat16.svg" />
+    <asset id="beat17" src="public/assets/finance/beat17.svg" />
+    <asset id="beat18" src="public/assets/finance/beat18.svg" />
+    <asset id="beat19" src="public/assets/finance/beat19.svg" />
+    <asset id="beat20" src="public/assets/finance/beat20.svg" />
+    <asset id="beat21" src="public/assets/finance/beat21.svg" />
+    <asset id="beat22" src="public/assets/finance/beat22.svg" />
+  </assets>
+
+  <audio>
+    <track src="voiceover/vo-full.mp3" label="Narration" offset="0" loop="false" />
+  </audio>
+
+  <captions font="workflow/fonts/DejaVuSans-Bold.ttf" size="64" color="#fde68a"
+    boxColor="rgba(0,0,0,0.55)" position="0.84" lineSpacing="1.15" maxLines="2" />
+
+  <scenes>
+    <scene id="b01" start="0" end="8.4" bg="beat01" motion="zoom-in" grade="#f59e0b" vignette="0.5" transition="fade" title="Hook">
+      <caption>Marcus needed a car. Not wanted. Needed.</caption>
+    </scene>
+    <scene id="b02" start="8.4" end="16.8" bg="beat02" motion="pan-right" grade="#f59e0b" vignette="0.5" transition="fade" title="720 + $22,000">
+      <caption>Credit score 720. Twenty-two thousand in savings.</caption>
+    </scene>
+    <scene id="b03" start="16.8" end="25.2" bg="beat03" motion="zoom-in" grade="#dc2626" vignette="0.55" transition="fade" title="The offer">
+      <caption>"Don't touch your savings. Finance it at 6.9%."</caption>
+    </scene>
+    <scene id="b04" start="25.2" end="33.6" bg="beat04" motion="zoom-in" grade="#f59e0b" vignette="0.5" transition="fade" title="Signed">
+      <caption>So he signed. A $35,000 truck, 72 months.</caption>
+    </scene>
+    <scene id="b05" start="33.6" end="42" bg="beat05" motion="zoom-out" grade="#fbbf24" vignette="0.5" transition="fade" title="The math">
+      <caption>Here's the seven-year math nobody shows you.</caption>
+    </scene>
+    <scene id="b06" start="42" end="50.4" bg="beat06" motion="zoom-in" grade="#dc2626" vignette="0.6" transition="fade" title="$8,000 interest">
+      <caption>Over 72 months — more than $8,000 just in interest.</caption>
+    </scene>
+    <scene id="b07" start="50.4" end="58.8" bg="beat07" motion="pan-left" grade="#f59e0b" vignette="0.5" transition="fade" title="Depreciation">
+      <caption>And cars lose about a fifth of their value instantly.</caption>
+    </scene>
+    <scene id="b08" start="58.8" end="67.2" bg="beat08" motion="pan-right" grade="#ef4444" vignette="0.5" transition="fade" title="$28K → $21K">
+      <caption>Year one: $28,000. Year three: $21,000.</caption>
+    </scene>
+    <scene id="b09" start="67.2" end="75.6" bg="beat09" motion="zoom-in" grade="#dc2626" vignette="0.6" transition="fade" title="Underwater">
+      <caption>He owes more than the truck is worth. Underwater.</caption>
+    </scene>
+    <scene id="b10" start="75.6" end="84" bg="beat10" motion="zoom-in" grade="#16a34a" vignette="0.45" transition="fade" title="Cash side">
+      <caption>Now the cash side. Same truck. Paid in full.</caption>
+    </scene>
+    <scene id="b11" start="84" end="92.4" bg="beat11" motion="zoom-out" grade="#16a34a" vignette="0.45" transition="fade" title="Savings grow">
+      <caption>His savings kept earning — every single year.</caption>
+    </scene>
+    <scene id="b12" start="92.4" end="100.8" bg="beat12" motion="zoom-in" grade="#fbbf24" vignette="0.5" transition="fade" title="Compounding">
+      <caption>Seven years later: $47,000 financed vs $35,000 cash.</caption>
+    </scene>
+    <scene id="b13" start="100.8" end="109.2" bg="beat13" motion="zoom-in" grade="#dc2626" vignette="0.55" transition="fade" title="The gap">
+      <caption>The gap: more than $12,000. Same truck, same roads.</caption>
+    </scene>
+    <scene id="b14" start="109.2" end="117.6" bg="beat14" motion="zoom-out" grade="#16a34a" vignette="0.45" transition="fade" title="Fair balance">
+      <caption>But financing isn't always wrong — if the rate is low.</caption>
+    </scene>
+    <scene id="b15" start="117.6" end="126" bg="beat15" motion="zoom-in" grade="#ef4444" vignette="0.55" transition="fade" title="6.9% vs savings">
+      <caption>6.9% to keep money earning a fraction of that. Loses.</caption>
+    </scene>
+    <scene id="b16" start="126" end="134.4" bg="beat16" motion="pan-left" grade="#f59e0b" vignette="0.5" transition="fade" title="The rule">
+      <caption>Can your money out-earn the loan? If not — pay cash.</caption>
+    </scene>
+    <scene id="b17" start="134.4" end="142.8" bg="beat17" motion="zoom-in" grade="#fbbf24" vignette="0.5" transition="fade" title="Tool, not asset">
+      <caption>Never finance what loses value. A car is a tool.</caption>
+    </scene>
+    <scene id="b18" start="142.8" end="151.2" bg="beat18" motion="zoom-in" grade="#dc2626" vignette="0.55" transition="fade" title="The reveal">
+      <caption>The sticker said $35,000. The real number: $47,000.</caption>
+    </scene>
+    <scene id="b19" start="151.2" end="159.6" bg="beat19" motion="zoom-out" grade="#16a34a" vignette="0.45" transition="fade" title="10 minutes">
+      <caption>One spreadsheet, ten minutes, and he'd have seen it.</caption>
+    </scene>
+    <scene id="b20" start="159.6" end="168" bg="beat20" motion="zoom-in" grade="#f59e0b" vignette="0.5" transition="fade" title="Ask the dealer">
+      <caption>Ask the dealer what the truck really costs. Over 7 years.</caption>
+    </scene>
+    <scene id="b21" start="168" end="176.4" bg="beat21" motion="zoom-in" grade="#16a34a" vignette="0.45" transition="fade" title="Run the math">
+      <caption>Run the seven-year math. Keep your interest.</caption>
+    </scene>
+    <scene id="b22" start="176.4" end="184.8" bg="beat22" motion="zoom-out" grade="#fbbf24" vignette="0.4" transition="fade" title="Keep what you have">
+      <caption>It's about keeping what you already have.</caption>
+    </scene>
+  </scenes>
+</project>
