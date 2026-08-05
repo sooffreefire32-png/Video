@@ -34,6 +34,28 @@ Dub any video's dialogue into **Roman Urdu** with per-character voices — the w
 Key: the lines are *rewritten* for natural Urdu rhythm and emotion — not translated word-for-word.
 Example: Malay *"Jangan biarkan dia access mainframe!"* → *"Usay mainframe tak pohanchne mat dena!"*
 
+## 📦 Shipped as audio-only (smart + GitHub-friendly)
+
+The full video is heavy (~89 MB — near GitHub's 100 MB/file limit), so the dub is **shipped as just the MP3 track**: `dubbing/audio/ejen-ali-arena-roman-urdu-track.mp3` (30 MB).
+
+**How to use it — download the video, then one command:**
+```bash
+# 1) download the original video yourself (360p is fine):
+#    yt-dlp -f '18/best' -o myvideo.mp4 "<URL>"
+#    (or grab it from any downloader)
+
+# 2) attach the dub track (no video re-encode — instant):
+bash dubbing/attach-audio.sh myvideo.mp4
+#    -> myvideo-dubbed.mp4
+
+# or manually:
+# ffmpeg -i myvideo.mp4 -i dubbing/audio/ejen-ali-arena-roman-urdu-track.mp4 \
+#        -map 0:v -map 1:a -c:v copy -c:a aac -b:a 192k -shortest out.mp4
+```
+> The track is exactly timed to the original episode (0:00–21:15), so it lines up with the video as long as you use the **same unedited source**. If your video has a different intro/outro, trim it with `-ss`/`-to` before attaching.
+
+---
+
 ## Re-run the whole pipeline
 
 ```bash
