@@ -11,22 +11,30 @@ Dub any video's dialogue into **Roman Urdu** with per-character voices — the w
 | 3. Marvel-style Roman Urdu script | human/AI localization | `dubbing/dub-script.json` — 48 lines |
 | 4. Per-character TTS | edge-tts (free, no API key) | 48 line WAVs, pitch/rate per character |
 | 5. Timeline placement | ffmpeg adelay + amix | VO track, synced to original timing |
-| 6. Mix + duck | ffmpeg sidechaincompress | original music/SFX kept under the VO |
+| 6. Mix (hard dialogue replacement) | ffmpeg slot-mask + amultiply | original audio muted ~90% under VO, full volume between lines |
 | 7. Mux | ffmpeg | `output/ejen-ali-arena-roman-urdu-dub.mp4` (21:14) |
 
-## Character voices used (edge-tts, all free)
+## Character voices used (edge-tts, all free) — v2 (quality-fixed)
+
+**v2 changes from user feedback:** every character has its OWN distinct voice, rates are real
+percentages with a global slowdown (v1 rounded every rate to `+1%` — everything sounded rushed
+and same-y), short lines are gently stretched to fill their scene slot, and the original dialogue
+is now HARD-muted during VO via a slot mask (v1 only ducked it, so you could hear both voices).
 
 | Character | Voice | Adjustment |
 |---|---|---|
-| Ali (hero boy) | hi-IN-MadhurNeural | rate 1.06, pitch +3 |
-| Rizwan (commander/uncle) | ur-PK-AsadNeural | default |
-| Papa | ur-IN-SalmanNeural | rate 0.97, pitch −1 |
-| Comot (robot sidekick) | hi-IN-SwaraNeural | rate 1.14, pitch +5 |
-| Gita (trainer, female) | ur-PK-UzmaNeural | default |
-| Mika (rival, female) | hi-IN-SwaraNeural | rate 1.08, pitch +2 |
-| Announcer / Datuk | ur-PK-AsadNeural | rate 0.93, pitch −2 |
-| Leon | ur-IN-SalmanNeural | rate 0.95, pitch −1 |
-| Villain (shadow voice) | ur-PK-AsadNeural | rate 0.88, pitch −4 |
+| Ali (hero boy) | hi-IN-MadhurNeural | rate −4%, pitch +2 |
+| Rizwan (commander/uncle) | ur-PK-AsadNeural | rate −10%, pitch −3 |
+| Papa | ur-IN-SalmanNeural | rate −6%, pitch −1 |
+| Comot (robot sidekick) | hi-IN-SwaraNeural | rate +8%, pitch +6 |
+| Gita (trainer, female) | ur-PK-UzmaNeural | rate −8%, pitch +1 |
+| Mika (rival, female) | ur-IN-GulNeural | rate 0%, pitch +2 |
+| Announcer / Datuk | en-IN-PrabhatNeural | rate −8% |
+| Leon | ur-PK-AsadNeural | rate −6%, pitch −1 |
+| Villain (shadow voice) | hi-IN-MadhurNeural | rate −20%, pitch −6, +echo |
+
+> `--rate=-10%` (equals form) is required — a bare `--rate -10%` makes edge-tts's argparse
+> read the negative number as a flag and fail.
 
 ## How the dub script works (Marvel style)
 

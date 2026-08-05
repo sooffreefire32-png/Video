@@ -6,15 +6,15 @@
     "dub_language": "Roman Urdu",
     "style": "Marvel-movie localization — natural conversational Urdu matching scene emotion, not literal translation",
     "voices": {
-      "ali": "hi-IN-MadhurNeural (pitch +12%) — young boy hero",
-      "rizwan": "ur-PK-AsadNeural — adult commander/uncle, calm authority",
-      "papa": "ur-IN-SalmanNeural — father, gentle adult male",
-      "comot": "hi-IN-SwaraNeural (pitch +22%, robot warp) — Comot the robot sidekick",
-      "gita": "ur-PK-UzmaNeural — female trainer, confident",
-      "mika": "hi-IN-SwaraNeural (rate 1.06) — rival contestant girl",
-      "announcer": "ur-PK-AsadNeural (rate 0.92) — arena announcer / Datuk Isham, formal",
-      "leon": "ur-IN-SalmanNeural (rate 0.92) — senior agent Leon",
-      "villain": "ur-PK-AsadNeural (pitch -14%) — mysterious voice in the shadows"
+      "ali": "hi-IN-MadhurNeural (rate -4%, pitch +2) — young boy hero",
+      "rizwan": "ur-PK-AsadNeural (rate -10%, pitch -3) — commander/uncle, deep authority",
+      "papa": "ur-IN-SalmanNeural (rate -6%, pitch -1) — father, gentle adult male",
+      "comot": "hi-IN-SwaraNeural (rate +8%, pitch +6) — Comot the robot sidekick, high & fast",
+      "gita": "ur-PK-UzmaNeural (rate -8%, pitch +1) — female trainer, confident",
+      "mika": "ur-IN-GulNeural (rate 0%, pitch +2) — rival contestant girl",
+      "announcer": "en-IN-PrabhatNeural (rate -8%) — arena announcer / Datuk Isham, formal",
+      "leon": "ur-PK-AsadNeural (rate -6%, pitch -1) — senior agent Leon (no lines in this ep)",
+      "villain": "hi-IN-MadhurNeural (rate -20%, pitch -6, +echo) — mysterious voice in the shadows"
     }
   },
   "lines": [
